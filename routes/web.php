@@ -18,27 +18,27 @@ Route::get('/', function () {
         'vegetables' => [
             [
                 'name' => 'Melanzana',
-                'color' => ['viola', 'bianco'],
+                'colors' => ['viola', 'bianco'],
                 'medium_weight' => '350g',
             ],
             [
                 'name' => 'Zucchina',
-                'color' => ['verde', 'giallo'],
+                'colors' => ['verde', 'giallo'],
                 'medium_weight' => '200g',
             ],
             [
                 'name' => 'Pomodoro',
-                'color' => ['rosso', 'verde'],
+                'colors' => ['rosso', 'verde'],
                 'medium_weight' => '90g',
             ],
             [
                 'name' => 'Zucca',
-                'color' => ['arancione'],
+                'colors' => ['arancione'],
                 'medium_weight' => '1500g',
             ],
             [
                 'name' => 'Cavolo cappuccio',
-                'color' => ['verde', 'viola'],
+                'colors' => ['verde', 'viola'],
                 'medium_weight' => '1500g',
             ],
         ]

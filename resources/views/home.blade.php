@@ -8,5 +8,17 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <ul>
+        @foreach ($vegetables as $vegetable)
+            <li>
+                {{ $vegetable['name'] }}
+                <ul>
+                    @foreach ($vegetable['colors'] as $color)
+                        <li>{{ $color }}</li>
+                    @endforeach
+                </ul>
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
