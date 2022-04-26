@@ -14,7 +14,36 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $params = [
+        'vegetables' => [
+            [
+                'name' => 'Melanzana',
+                'color' => ['viola', 'bianco'],
+                'medium_weight' => '350g',
+            ],
+            [
+                'name' => 'Zucchina',
+                'color' => ['verde', 'giallo'],
+                'medium_weight' => '200g',
+            ],
+            [
+                'name' => 'Pomodoro',
+                'color' => ['rosso', 'verde'],
+                'medium_weight' => '90g',
+            ],
+            [
+                'name' => 'Zucca',
+                'color' => ['arancione'],
+                'medium_weight' => '1500g',
+            ],
+            [
+                'name' => 'Cavolo cappuccio',
+                'color' => ['verde', 'viola'],
+                'medium_weight' => '1500g',
+            ],
+        ]
+    ];
+    return view('home', $params);
 });
 
 // Route::get('/about', function () {
