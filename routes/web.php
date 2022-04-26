@@ -15,6 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $params = [
+        'links' => [
+            'Home',
+            'About us',
+            'Feature',
+            'Testimonials',
+            'Contact US'
+        ]
+    ];
+    return view('home', $params);
+})->name('navbar');
+
+Route::get('/', function () {
+    $params = [
         'vegetables' => [
             [
                 'name' => 'Melanzana',
@@ -44,11 +57,7 @@ Route::get('/', function () {
         ]
     ];
     return view('home', $params);
-});
-
-// Route::get('/about', function () {
-//     return '<h1>About our web site</h1>';
-// })-> name('about');
+})->name('homepage');
 
 
 /*

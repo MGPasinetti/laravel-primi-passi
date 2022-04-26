@@ -7,6 +7,15 @@
     <title>Home</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                @foreach ($links as $link)
+                    <li><a href="{{ route('navbar') }}">{{ $link }}</a></li>
+                @endforeach
+            </ul>
+        </nav>
+    </header>
     <h1>Hello World</h1>
     <ul>
         @foreach ($vegetables as $vegetable)
